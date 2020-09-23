@@ -1,0 +1,30 @@
+DOI: 10.1109/CIFER.1997.618940
+
+Pros
+====
+- It presents the architecture of the CARDWATCH database mining system in a simple to understand 5 component conceptual way.
+- For it's day and age, when using machine learning on transactions was relatively new, this paper has good insights on setting a foundation on why do we need to use machine learning for detecting these frauds.
+- The architecture of the system allows for extensibility of it's features by keeping the LAL (Learning Algorithm Library) module loosely connected from rest of the architecture.
+- It provides a GUI for using machine learning algorithm on databases.
+
+
+Cons
+====
+- It is a relatively old paper when Internet was not yet in full swing and online transactions were not as relavent as they are today (published in 1997).
+- It uses feed-forward network architecture, with a static set of layers (three) which cannot be changed.
+
+
+Strengths
+=========
+- Pioneering GUI for machine learning
+- Loosely coupled architecture of databases and machine learning algorithm modules allow for extension to more sophisticated models and different types of databases.
+
+Weakness
+========
+- It bases it's results on a very low cardinality sample set (n=323)
+
+
+
+Potential improvements of the results
+=====================================
+- Using more than 3 layers in the feed-forward layer architecture 
