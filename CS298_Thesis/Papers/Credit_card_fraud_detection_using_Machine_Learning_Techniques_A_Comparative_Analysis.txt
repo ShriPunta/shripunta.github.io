@@ -1,0 +1,36 @@
+DOI: https://doi.org/10.1109/iccni.2017.8123782
+
+Pros
+====
+- Written in simple and straight forward language with no ML Jargon.
+- Good explanation of characteristics of a credit card transaction and how selection of these parameters affects the fraud detection algorithm.
+- Good research into comparisons of algorithms for credit card detection and their outcomes
+
+
+Cons
+====
+- Repetitive and filler statements with poor grammar.
+
+Strengths
+=========
+- Achieves good results of efficient detection by undersampling of non-fraud data and over-sampling of fraud data approach with extremely skewed dataset.
+
+Weakness
+========
+- The dataset is of only one day of transactions, and algorithms like K-Nearest Neighbour may not fare well for larger datasets. 
+
+
+
+Potential improvements of the results
+=====================================
+- Expected future areas of research could be in examining meta-classifiers and metalearning approaches.. 
+- Significant room for improvement by investigating with  other sampling approaches. 
+
+
+Notes
+=====
+- Provides metrics about credit card losses in USD
+- A hybrid of under-sampling the negative cases and oversampling the positive cases is carried in order to preserve
+valuable patterns from the data
+- 0.172% (fraud) data of all transactions
+- The dataset is sourced from ULB Machine Learning Group The dataset contains credit card transactions made by European cardholders in September 2013. [https://www.kaggle.com/mlg-ulb/creditcardfraud]
