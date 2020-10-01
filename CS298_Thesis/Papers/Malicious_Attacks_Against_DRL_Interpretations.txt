@@ -1,0 +1,36 @@
+DOI: https://dl.acm.org/doi/pdf/10.1145/3394486.3403089
+
+Pros
+====
+- Proposes an universal adversarial attack against DRL interpretations (i.e., UADRLI)
+
+<NOt ABLE TO FOLLOW THE PAPER>
+
+Cons
+====
+- 
+
+Strengths
+=========
+- 
+
+Weakness
+========
+- 
+
+
+
+Potential improvements of the results
+=====================================
+- 
+
+
+Notes
+=====
+- Talks about the limitations of (blind box approach of )RL in sensitive areas like Medical, autonomous navigation. (hence DRL interpretation models proposed)
+- Assumes we are in an unsafe environment, and susceptible to attacks (adversial/poisoning)
+Adverserial attacks (Testing stage)
+Model Poisoning (Training stage)
+- Markov Decision Process details | Future reward taken into account
+- Saliency maps (types)
+- The attacker can only change the state observations that are communicated between the agent and the environment
