@@ -6,7 +6,6 @@ Pros
 - Good explanation of characteristics of a credit card transaction and how selection of these parameters affects the fraud detection algorithm.
 - Good research into comparisons of algorithms for credit card detection and their outcomes
 
-
 Cons
 ====
 - Repetitive and filler statements with poor grammar.
@@ -18,8 +17,6 @@ Strengths
 Weakness
 ========
 - The dataset is of only one day of transactions, and algorithms like K-Nearest Neighbour may not fare well for larger datasets. 
-
-
 
 Potential improvements of the results
 =====================================
