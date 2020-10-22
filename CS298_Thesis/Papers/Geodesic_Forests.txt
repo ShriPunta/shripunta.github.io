@@ -3,29 +3,33 @@ DOI: https://dl.acm.org/doi/10.1145/3394486.3403094
 Pros
 ====
 - Uses "randomer" forest algorithm to isolate meaning structure of data from noise.
+- Introduces a new way of splitting called Fast-BIC (Bayesian INformation Criterion)
+- Introduces a way to measure how well are the estimates for the geodesic distances. (Geodesic Precision and Recall)
+  - Higher precision and lower recall indicate a better estimation of geodesic distances
 
 Cons
 ====
 - Similar to the nearest neighbour approximation technique FLANN which does so by building binary space-partitioning trees called K-d trees.(linear Time and space complexity)
+- Overall accuracy of new proposed GF is higher than the current algorithms but lower overall.
 
 Strengths
 =========
 - Geodesic forests tend to achieve linear time complexity and space complexity.
 - Better than IsoMap which calculate the distance between every point O(n^2) and then the shortest distance O(n^3). Isomap is one the best manifold algorithm out there but has a quadratic space and time complexity.
 -  Correctly implements a method for generating proximity matrices from random forests.
+- Gives 3 alternatives for splitting criteria (Each with its own strength)
 
 Weakness
 ========
-- This approach has not been thoroughly evaluated on highly noisy data sets.
+- The precision metric introduced only verifies if the geodesic neighbours are correct.
 
 Summary
 =======
-This paper takes forward the idea of rectangular K-d partitioning  hyperrectangular cells (S. Dasgupta and Y. Freund, "Random projection trees and low dimensional manifolds", 2008). 
-<WIP>
+This paper takes forward the idea of rectangular K-d partitioning  hyperrectangular cells (S. Dasgupta and Y. Freund, "Random projection trees and low dimensional manifolds", 2008) and proposes a geodesic learning method called Random Forests. It is based on a newly proposed Fast-BIC splitting rule for the binary trees of the forest. The paper also introduces metrics called geodesic precision and recall evaluation which quantatively validate the estimation of the geodesic distances calculated by an algorithm. This algorithm is noise-resistant and can be used in recommendation systems with high-noise space. As shown in the paper, it does better than most other algorithms like IsoMap, UMAP, FLANN and simple Euclidean.
 
 Potential improvements of the results
 =====================================
-<WIP>
+- Need to test the Random Forest to high noise data that it theoretically claims to be resistant to.
 
 Notes
 =====
@@ -35,4 +39,7 @@ Notes
 - Gradient boosted trees & Random forests > Decision Trees
 - Geodesic distance is the shortest path between two points in a Riemannian manifold and geodesic learning is the process of estimating geodesic distances between pairs of points in a dataset.
 - Manifold learning algorithms to first learn the latent structure of the data, and then estimate distances in the estimated latent structure space. In fact, the first step in many manifold learning algorithms is to estimate the geodesic distance between all pairs of points
-- A random forest is an ensemble of decision trees in which each tree is created from bootstrapped samples of the training dataset; that is, each tree is built from a random subset of training data
+- A random forest is an ensemble of decision trees in which each tree is created from bootstrapped samples of the training dataset; that is, each tree is built from a random subset of training data.
+- GF does not choose split points in the original feature space.
+- Similarity matrix is based on the assumption that similarity between two points is the distance between them in a given tree.
+- https://neurodata.io/sporf/
